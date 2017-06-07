@@ -10,6 +10,7 @@ console.log(tb);
 
 let acc = 0;
 for(i=0;i<tb.length;i++) {
+ 	console.log(tb[i]);
  	acc += tb[i]
 }
 

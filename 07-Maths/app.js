@@ -18,7 +18,7 @@ console.log(couleBateau);
 console.log(voleBateau);
 
 // Exercice : Aléatoire
-let a = Math.round(Math.random() * (100 - 50)) + 50;
+let a = Math.floor(Math.random() * (100 - 50)) + 50;
 let b = Math.round(Math.random());
 let c = Math.round(Math.random() * 10);
 

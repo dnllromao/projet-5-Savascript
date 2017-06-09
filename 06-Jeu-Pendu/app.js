@@ -18,7 +18,8 @@
 // compter le nombre de tentatives ratés
 
 const tb = ['B','O','N','J','O','U','R'];
-let devin = ['','','','','','','_'];
+//let devin = ['','','','','','','_'];
+let devin = [];
 let lt = [];
 let count = 0;
 
@@ -35,9 +36,12 @@ function guessLetter(l) {
 
 	count++;
 
-	if(devin.indexOf('') < 0 && devin.indexOf('_') < 0 ){
-		window.alert('Félicitations !');
-	}
+	// if(devin.indexOf('') < 0 && devin.indexOf('_') < 0 ){
+	// 	window.alert('Félicitations !');
+	// }
+	if(devin.length == tb.length ){
+			window.alert('Félicitations !');
+		}
 	
 }
 
@@ -67,3 +71,6 @@ console.log(devin);
 
 console.log(lt);
 console.log(count);
+
+// let input = window.prompt('what ?');
+// guessLetter(input);

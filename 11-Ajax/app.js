@@ -6,12 +6,16 @@
 // afficher le plus grand score dans la console tip : sort()
 // afficher le plus petit score tip : sort()
 
-let ajax =  new XMLHttpRequest();
+const ajax =  new XMLHttpRequest();
+let justeSa;
 
 ajax.onload = function() { // .onload called when transaction completes sucessfully
   if (ajax.status >= 200 && ajax.status < 400) {
     // Success!
     let json = JSON.parse(ajax.responseText);
+
+    justeSa = json;
+    console.log(justeSa);
     let scoreded = addScore(json);
 	scoreded = sortByScore(scoreded);
 	let categories = divideByScore(scoreded);
